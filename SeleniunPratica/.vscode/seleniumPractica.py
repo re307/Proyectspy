@@ -14,23 +14,18 @@ driver.get("https://twitter.com/AnaPao_LePew")
 # driver.find_element_by_name('session[password]').send_keys('pumas2018')
 #//*[@id="react-root"]/div/div/div[2]/main/div/div/div[1]/form/div/div[3]/div/div
 # driver.find_element_by_xpath('//*[@id="react-root"]/div/div/div[2]/main/div/div/div[1]/form/div/div[3]/div/div').click()
-time.sleep(5)
+# time.sleep(5)
 #article
-articulos = driver.find_elements_by_tag_name("article")
+# articulos = driver.find_elements_by_tag_name("article")
 #//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div/div[2]/section/div/div/div[1]/div/div/article
 #//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div/div[2]/section/div/div/div[3]/div/div/article
 #//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div/div[2]/section/div/div/div[4]/div/div/article
 
-for articulo in articulos:
-    # print(articulo.text)
-    textoPartido = articulo.text.split('\n')
-    #Tweet fijado
-    if 'Tweet fijado' not in textoPartido[0]:
-        print(textoPartido)
+# for articulo in articulos:
+#     # print(articulo.text)
+#     textoPartido = articulo.text.split('\n')
+#     #Tweet fijado
+#     if 'Tweet fijado' not in textoPartido[0]:
+#         print(textoPartido)
         
 driver.close()
-# https://www.google.com/ 
-msg = "Inicio de python"
-array = ["1","2","3"]
-print(array)
-print(msg)
